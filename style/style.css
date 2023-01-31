@@ -1,0 +1,76 @@
+body{
+    background: rgb(20, 14, 37);
+    /* background: linear-gradient(90deg, rgba(99,17,177,1) 30%, rgba(17,69,177,1) 62%, rgba(148,164,255,1) 100%);
+    background-size: 400%;
+    animation: gradient 25s ease infinite; */
+    color: whitesmoke;
+    @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    font-family: 'Nunito Sans', sans-serif;
+}
+@keyframes gradient{
+    /*The gradient animation is moving the background position,
+     which causes this color fade effect since we set the background size to 400% in the html style*/
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+}
+
+logo{
+    font-weight: 800;
+    font-size: 40px;
+    font-family: 'Raleway', sans-serif;
+}
+video{
+    max-width: 100%;
+    width: 100vw;
+    height: 75vh;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: center;
+    object-position: center;
+}
+
+.container{
+    position: relative;
+    text-align: center;
+    color: white;
+    background-color: rgb(19, 19, 27);
+}
+h1{
+    position: absolute;
+    font-size: 240px;
+    color:rgb(46, 46, 46);
+    /* color: rgb(120, 19, 214); */
+}
+#stack1{
+    top: 2%;
+    left: 10%;
+}
+#stack2{
+    top: 25%;
+    left: 10%;
+}
+#stack3{
+    top: 48%;
+    left: 10%;
+}
+h2{
+    font-size: 80px;
+    font-weight: 600;
+    text-shadow: 3px 3px 8px rgb(36, 36, 36);
+}
+.section{
+    background-color: rgba(240, 248, 255, 0.116);
+    border-radius: 10px;
+}
+p{
+    font-size: 24px;
+    font-weight: 200;
+    font-family: 'Nunito Sans', sans-serif;
+}
