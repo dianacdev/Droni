@@ -11,17 +11,17 @@
 <body>
     <div class="container">
         <nav>
-            <logo>DRONI</logo>
-            <button href="#Buy" class="nav_button">Buy</button>
-            <button class= "nav_button" href="#Rent">Rent</button>
-            <button href="#Support" class="nav_button">Support</button>
+            <logo><a href="index.html">DRONI</a></logo>
+            <button class="nav_button"><a href="#Buy">Buy</a></button>
+            <button class= "nav_button"><a href="#Buy">Rent</a></button>
+            <button class="nav_button"><a href="#form">Support</a></button>
         </nav>
         <h1 id="stack1">Drones</h1>
         <h1 id="stack2">Made</h1>
         <h1 id="stack3">Simple.</h1>
         <video  muted autoplay loop src="/videos/drone-loop.mp4" alt="Drone flying in and out of frame"/>
     </div>
-    <div class="section">
+    <div class="section" id="Buy">
         <h2>Most Popular</h2>
         <div class="info">
             <button class="btn-big">
@@ -68,9 +68,8 @@
             <input type="text" value="Name"/>
             <input type="text" value="Email"/>
             <input type="text" value="Phone Number"/>
-            <input type="text" value="Questions Concerns"/>
             <input type="text" value="Type Of Drones"/>
-            <input type ="text" value="Description"/>
+            <textarea name="description" id="description" cols="30" rows="10"> Questions ?</textarea>
             <button class="submit_button">Submit</button>
         </div>
     </div>
