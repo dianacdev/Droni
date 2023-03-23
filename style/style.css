@@ -5,7 +5,10 @@
     --h1-large:240px;
     --h2-large:80px;
     --h3-large:48px;
-    --border-radius:15px;
+    --nav-text:28px;
+    --regular-text: 16px;
+    --p-text: 20px
+    --border-radius: 15px;
     --accent-color:rgb(42, 30, 77);
     
 }
@@ -28,7 +31,7 @@ logo{
 }
 .nav_button{
     font-weight: 600;
-    font-size: 28px;
+    font-size: var(--nav-text);
     font-family: 'Raleway', sans-serif;
     color: var(--text-color);
     text-decoration: none;   
@@ -53,6 +56,7 @@ video{
 .container{
     position: relative;
     background-color: var(--main-bg-color);
+    width: 100vw;
 }
 h1{
     position: absolute;
@@ -85,13 +89,16 @@ h3{
     padding: 0%;
 }
 .section{
-    border-radius: var(--border-radius);
+    border-radius: 15px;
     margin: 0.5% 2%;
     padding: 2%;
 }
-
+a{
+    color: var(--text-color);
+    text-decoration: none;
+}
 p{
-    font-size: 20px;
+    font-size: var(--p-text);
     font-weight: lighter;
     margin: 1% 2%;
     font-family: "Raleway", sans-serif;
@@ -102,7 +109,7 @@ footer{
 #location, #hours{
     flex:1;
     text-align: center;
-    font-size: 16px;
+    font-size: var(--regular-font);
     margin-bottom: 5px;
 }
 
@@ -114,7 +121,7 @@ footer{
     line-height: 32px;
 }
 .button-trio{
-    border-radius: var(--border-radius);
+    border-radius: 15px;
     width: 100%;
     height: auto;
     color: rgb(22, 24, 29);
@@ -135,7 +142,7 @@ footer{
 }
 
 .btn-big{
-    border-radius: var(--border-radius);
+    border-radius: 15px;
     margin: 15px;
     background-color: rgba(228, 243, 255, 0.973);
     color: rgb(22, 24, 29);
@@ -149,22 +156,63 @@ footer{
     padding: auto;
 }
 input{
-    border-radius: var(--border-radius);
+    border-radius: 15px;
     margin: 20px 40px;
     padding: 10px 10px;
     border: none;
-    width: 90%;
+    width: 80%;
+}
+textarea{
+    border-radius: 15px;
+    width: 80%;
+    padding: 10px 10px;
+    margin: 20px 40px;
 }
 .submit_button{
     font-weight: 600;
-    font-size: 28px;
+    font-size: var(--nav-text);
     font-family: 'Raleway', sans-serif;
     color: var(--text-color);
     text-decoration: none;   
     background-color: var(--main-bg-color);
     border: none;
-    border-radius: var(--border-radius);
+    border-radius: 15px;
     padding: 10px;
-    margin: 10px;
+    margin: auto;
     width: 100%;
+}
+
+@media only screen and (max-width: 600px){
+	/*Big smartphones [426px -> 600px]*/
+    :root{
+        --h1-large:200px;
+        --h2-large:40px;
+        --h3-large:24px;
+    }
+    #stack1{
+        top: 30%;
+        left: 5%;
+    }
+    #stack2{
+        top: 40%;
+        left: 5%;
+    }
+    #stack3{
+        top: 50%;
+        left: 5%;
+    }
+    .nav_button{
+        padding-left: 12px;
+    }
+}
+
+@media only screen and (max-width: 425px){
+	/*Small smartphones [325px -> 425px]*/
+    :root{
+        --h1-large:60px;
+        --h2-large:20px;
+        --h3-large:12px;
+        --nav-text: 18px;
+    }
+
 }
