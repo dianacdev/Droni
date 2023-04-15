@@ -5,9 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Droni</title>
-    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/styles.css">
+    <script src="script.js" defer></script>
     <!-- <link rel="icon" href="" type="image/x-icon"> This is to change the icon in the browser-->
 </head>
+<!-- REFACTOR CSS-FIX       A
+CSS THEME                     A 
+CSS THEME TOGGLE     A 
+MOBILE RESPONSIVE     B 
+I think it could be better by refactoring some of the layout. I also ran out of time to fix my contact section I know it needs work still. 
+For a better example of my contact forms i will probably replicate something similar to dianacdev.com
+-->
 <body>
     <div class="container">
         <nav>
@@ -15,6 +23,7 @@
             <button class="nav_button"><a href="#Buy">Buy</a></button>
             <button class= "nav_button"><a href="#Buy">Rent</a></button>
             <button class="nav_button"><a href="#form">Support</a></button>
+            <button id="dark-mode-toggle" class="dark-mode-toggle"><svg width="100%" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 496"><path fill="currentColor" d="M8,256C8,393,119,504,256,504S504,393,504,256,393,8,256,8,8,119,8,256ZM256,440V72a184,184,0,0,1,0,368Z" transform="translate(-8 -8)"/></svg> </button>
         </nav>
         <h1 id="stack1">Drones</h1>
         <h1 id="stack2">Made</h1>
@@ -62,8 +71,8 @@
         </div>
     </div>
     <div class="section" id="form">
-        <h2>Contact Us</h2>
-        <p>We would love to answer any questions you might have!</p>
+        <h2 class="contact-header">Contact Us</h2>
+        <p class="contact-header">We would love to answer any questions you might have!</p>
         <div>
             <input type="text" value="Name"/>
             <input type="text" value="Email"/>
