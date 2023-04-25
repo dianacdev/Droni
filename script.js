@@ -87,7 +87,7 @@ function validateName(el) {
   if (el.value === "Ken") {
     //setCustomValidity called with a null string sets input 'valid' property to true
     console.log("setCustomValidity('')")
-    el.setCustomValidity('');
+    el.setCustomValidity('Name is Ken!');
   } else {
     //setCustomValidity called with a null string sets input 'invalid' property to true
     console.log("setCustomValidity('Name must be Ken!')")
