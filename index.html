@@ -9,12 +9,16 @@
     <script src="script.js" defer></script>
     <!-- <link rel="icon" href="" type="image/x-icon"> This is to change the icon in the browser-->
 </head>
-<!-- REFACTOR CSS-FIX       A
-CSS THEME                     A 
-CSS THEME TOGGLE     A 
-MOBILE RESPONSIVE     B 
-I think it could be better by refactoring some of the layout. I also ran out of time to fix my contact section I know it needs work still. 
-For a better example of my contact forms i will probably replicate something similar to dianacdev.com
+<!--
+REFACTOR JS                                  A 
+VALIDATION LIBRARY                     B This portion was confusing when reading the instructions was unsure on what actually needed to be implemented any clarification on this portion would be great. Wasn't sure if i need to check every box as required or not. 
+FLEXBOX LAYOUT/FORM HTML    A 
+
+--EXTRA CREDIT COMPLETED--
+FORM MOBILE RESPONSIVE (3pts)    YES
+ADDITIONAL COMMENTS
+I decided against the hidden support page after implementing into the site it just doesn't mesh well with the websites format.
+If needed i can reimplement the hidden popup. 
 -->
 <body>
     <div class="container">
@@ -22,7 +26,7 @@ For a better example of my contact forms i will probably replicate something sim
             <logo><a href="index.html">DRONI</a></logo>
             <button class="nav_button"><a href="#Buy">Buy</a></button>
             <button class= "nav_button"><a href="#Buy">Rent</a></button>
-            <button class="nav_button"><a href="#form">Support</a></button>
+            <button class="nav_button"><a href="#form">Contact</a></button>
             <button id="dark-mode-toggle" class="dark-mode-toggle"><svg width="100%" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 496"><path fill="currentColor" d="M8,256C8,393,119,504,256,504S504,393,504,256,393,8,256,8,8,119,8,256ZM256,440V72a184,184,0,0,1,0,368Z" transform="translate(-8 -8)"/></svg> </button>
         </nav>
         <h1 id="stack1">Drones</h1>
@@ -71,15 +75,29 @@ For a better example of my contact forms i will probably replicate something sim
         </div>
     </div>
     <div class="section" id="form">
-        <h2 class="contact-header">Contact Us</h2>
-        <p class="contact-header">We would love to answer any questions you might have!</p>
-        <div>
-            <input type="text" value="Name"/>
-            <input type="text" value="Email"/>
-            <input type="text" value="Phone Number"/>
-            <input type="text" value="Type Of Drones"/>
-            <textarea name="description" id="description" cols="30" rows="10"> Questions ?</textarea>
-            <button class="submit_button">Submit</button>
+        <div class="inner-card">
+            <h3 style="font-weight: 600;color: white;">Contact.</h3>
+
+            <form ref={} onSubmit={}>
+              <label>
+                <span >Your Name</span>
+                <input type="text" name='name' placeholder="What's your name?" class='form-input' id="name"/>
+              </label>
+
+              <label>
+                <span>Your Email</span>
+                <input type="email" name='email' placeholder="What's your email?" class='form-input' id="email"/>
+              </label>
+
+              <label>
+                <span >Your Message</span>
+                <textarea rows='8' type="message" name='message'  placeholder="Request a Quote Now!" class='form-input'></textarea>
+              </label>
+
+              <button class="form_button">
+                Send
+              </button>
+            </form>
         </div>
     </div>
     <footer>Made by Diana Cervantes 2023</footer>

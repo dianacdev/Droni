@@ -85,14 +85,13 @@ h2{
 }
 h3{
     font-size: var(--h3-large);
-    text-align: center;
     margin-bottom: 0%;
     padding: 0%;
 }
 .section{
     border-radius: 15px;
-    margin: 0.5% 2%;
-    padding: 2%;
+    padding: 1%;
+    margin: .5% 1%;
 }
 a{
     color: var(--text-color);
@@ -157,7 +156,8 @@ footer{
 #form{
     background-color:var(--accent-color);
     color: var(--main-bg-color);
-    padding: 5%;
+    padding: 2rem;
+    flex-direction: column-reverse;
 }
 input{
     border-radius: 15px;
@@ -171,19 +171,6 @@ textarea{
     width: 80%;
     padding: 10px 10px;
     margin: 20px 40px;
-}
-.submit_button{
-    font-weight: 600;
-    font-size: var(--nav-text);
-    font-family: 'Raleway', sans-serif;
-    color: var(--text-color);
-    text-decoration: none;   
-    background-color: var(--main-bg-color);
-    border: none;
-    border-radius: 15px;
-    padding: 10px;
-    margin: auto;
-    width: 100%;
 }
 
 @media only screen and (max-width: 1000px){
@@ -295,3 +282,68 @@ textarea{
     --accent-color:rgb(42, 30, 77);
 }
   
+form{
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.inner-card{
+    flex: 0.75;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+label{
+    display: flex;
+    flex-direction: column;
+}
+
+span{
+    color: white;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    padding-left: 20px;
+
+}
+
+textarea{
+    color: white;
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+    border: none;
+    font-weight: 600;
+    --tw-bg-opacity: 1;
+    background-color: rgb(21 16 48 / var(--tw-bg-opacity));
+    border-radius: 0.5rem;
+}
+
+.form-input{
+    --tw-bg-opacity: 1;
+    background-color: rgb(21 16 48 / var(--tw-bg-opacity));
+    color: white;
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+    padding: 1rem 1.5rem;
+    font-weight: 600;
+}
+
+.form_button{
+    --tw-bg-opacity: 1;
+    background-color: rgb(21 16 48 / var(--tw-bg-opacity));
+    --tw-shadow-color: #050816;
+    --tw-shadow: var(--tw-shadow-colored);
+    --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+    padding: 0.75rem 2rem;
+    color: white;
+    font-weight: bold;
+    border-radius: 0.75rem;
+    width: fit-content;
+    cursor: pointer;
+
+}
